@@ -1,0 +1,45 @@
+body {
+background-color:pink;
+font-family: Arial;
+background-size: auto 100vh;
+/* altura do vilport */
+/* valor absoluto */
+/* auto= mantem a proporçao */
+height:110vh;
+/* altura no body sempre a mesma  */
+}
+.menu {
+    background-color:white;
+    font-family: cursive;
+}
+.menu ul {
+    display: flex;
+    /* vira coluna */
+    justify-content: space-around;
+    /* espaço entre as colunas */
+    /* so funciona as duas em conjunto */
+}
+.menu li {
+    list-style: none;
+    /* tirar os pontos do menu */
+}
+a {
+    text-decoration:none;
+    /* tirar o link */
+    color: teal;
+    /* serve para mudar a cor do texto */
+}
+a: hover {
+   text-decoration: underline;
+   /* passar o mouse e aparecer o link */
+}
+.site-subtitle,
+.site-title {
+text-align: center;
+color: black;
+}
+.site-subtitle {
+    text-align: center;
+}
+
+
