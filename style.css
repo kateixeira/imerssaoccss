@@ -1,3 +1,10 @@
+/* reset do cs */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+/* começa a conta o tamanho do elemento a partir da borda da pagina */
+}
 body {
 background-color:pink;
 font-family: Arial;
@@ -7,10 +14,36 @@ background-size: auto 100vh;
 /* auto= mantem a proporçao */
 height:110vh;
 /* altura no body sempre a mesma  */
+/* background-image:url('');
+caminho da imagem para sair a pasta url('../img') */
+font: size 12;px;
+}
+header{
+height: 100vh;
+display:flex;
+justify-content:center;
+align-items: center;
+}
+@media(min-width: 400px) {
+    /* se a minha tela tiver pelo menos 400px */
+    /* vai carregar esses estilos */
+    body {
+        font-size 14px;
+    }
+
+}
+@media(min-width:600px){
+    body{
+        font-size:18px;
+    }
 }
 .menu {
     background-color:white;
     font-family: cursive;
+    position:fixed;
+    /* elemento fique fixo */
+    width: 100vw;
+    top:0;
 }
 .menu ul {
     display: flex;
@@ -23,11 +56,20 @@ height:110vh;
     list-style: none;
     /* tirar os pontos do menu */
 }
+    
+.menu a {
+padding: 10px 20px;
+display: block;
+
+/* afasta o conteudo de texto */
+}
 a {
-    text-decoration:none;
+    /* text-decoration:none; */
     /* tirar o link */
-    color: teal;
-    /* serve para mudar a cor do texto */
+    /* color: teal;
+    serve para mudar a cor do texto */
+    font-family: Verdana, sans-serif;
+
 }
 a: hover {
    text-decoration: underline;
@@ -38,8 +80,17 @@ a: hover {
 text-align: center;
 color: black;
 }
+.site-title {
+    font-size: 4m;
+}
 .site-subtitle {
     text-align: center;
+    font-family: ' Verdana, sans-serif';
 }
+.img-portfolio {
+width: 180px;
+height: 180px;
+}
+
 
 
